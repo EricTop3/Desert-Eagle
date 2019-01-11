@@ -19,7 +19,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -52,12 +52,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>./;../;C:\boost_1_63_0;../libnice/nice;../libnice/stun;../glib/include/glib-2.0;..\glib\lib\glib-2.0\include;../opensslnew;../srtp;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../;../boost_1_55_0;../libnice/nice;../libnice/stun;../glib/include/glib-2.0;..\glib\lib\glib-2.0\include;../opensslnew;../srtp;../boost_1_55_0/libs;../boost_1_55_0/boost</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\boost_1_63_0\lib32-msvc-11.0;../opensslnew;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../boost_1_55_0/stage/lib;../opensslnew</AdditionalLibraryDirectories>
       <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>

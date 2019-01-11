@@ -61,7 +61,7 @@ namespace websocketpp {
 namespace lib {
 
 #ifdef _WEBSOCKETPP_CPP11_SYSTEM_ERROR_
-    using namespace std::errc;
+    using std::errc;
     using std::error_code;
     using std::error_category;
     using std::error_condition;

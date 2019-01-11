@@ -4,6 +4,7 @@
 #include <iostream>
 #include <agent.h>
 #include <gio/gnetworking.h>
+#include <thread.hpp>
 
 #pragma comment(lib, "../libnice/nice/nice.lib")
 
